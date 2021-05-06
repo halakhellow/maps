@@ -14,4 +14,10 @@ export class User {
       longitude: parseFloat(faker.address.longitude()),
     };
   }
+
+  markerContent() {
+    return `
+      <h2>User name: ${this.name}</h2>
+      `;
+  }
 }
